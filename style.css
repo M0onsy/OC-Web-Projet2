@@ -1,3 +1,27 @@
+@media all and (min-width: 768px) and (max-width: 991px) {
+  * {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+  }
+  
+  body {
+    margin:auto;
+    max-width:991px;
+  }
+
+  .aside {
+    display:flex;
+    flex-direction: column;
+    
+  }
+  
+  
+}
+
+@media all and (max-width: 767px) {
+
+}
+
 * {
   font-family: 'Raleway', sans-serif;
   margin: 0;
@@ -6,31 +30,30 @@
 body {
   margin:auto;
   max-width: 1400px;
-  max-height:1900px;
 }
 
 h1 {
-  font-size:22px;
+  font-size:1.375em;
   font-weight: 900;
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 1.125em;
   font-weight:900;
 }
 
 h3 {
-  font-size:16px;
+  font-size:1em;
   font-weight:900;
 }
 
 h4 {
-  font-size:16px;
+  font-size:1em;
   font-weight:400;
 }
 
 p {
-  font-size:14px;
+  font-size:0.875em;
 }
 
 #incognito {
@@ -45,31 +68,27 @@ nav {
 }
 
 nav a {
-  margin: 30px;
-}
-
-footer {
-  width: 80%;
+  margin: 1.875em;
 }
 
 .header a:hover {
-  padding:45px 20px 0 20px;
-  border-top: 4px solid #0065FC;
+  padding:2.875em 1.563em 0 1.563em;
+  border-top: 0.125em solid #0065FC;
 }
 
 .logo {
-  width:80%;
-  height: 20px;
-  margin: 0 0 30px 22px;
+  width:4.375em;
+  height: 1.25em;
+  margin: 0 0 1.875em 1.375em;
   position:relative;
-  top:10px;
+  top:0.625em;
 }
 
 .texte{
   display:flex;
   flex-direction: column;
-  margin: 0 0 0 50px;
-  gap:8px;
+  margin: 0 0 0 3.125em;
+  gap:0.5em;
 }
 
 .conteneur-recherche input {
@@ -83,37 +102,37 @@ footer {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  margin: 20px 0 30px 50px;
+  margin: 1.25em 0 1.875em 3.125em;
 }
 .rechercher {
-  width: auto;
-  height: 48px;
-  border: 1px solid #0065FC;
+  width: 8em;
+  height: 2.65em;
+  border: 0.063em solid #0065FC;
   color: white;
   background-color: #0065FC;
-  border-radius: 0 15px 15px 0;
+  border-radius: 0 0.938em 0.938em 0;
 } 
 
 .site-recherche,
 .site-recherche:active, .site-recherche:focus, .site-recherche:hover { 
-  width: 240px;
-  height: 48px;
-  border-radius: 0px;
+  width: 15em;
+  height: 2.65em;
   background-color: white;
-  border: 1px solid #f2f2f2;
-  padding-right:50px;
+  border: 0.063em solid #f2f2f2;
+  padding-right:6em;
+  margin-right:-2.625em;
 } 
 
 .localisation {
-  width:3%;
-  height: 46px;
-  border: 1px solid #f2f2f2;
-  border-radius: 15px 0 0 15px;
+  width:2.25em;
+  height: 2.875em;
+  border: 0.063em solid #f2f2f2;
+  border-radius: 0.938em 0 0 0.938em;
   background-color: #f2f2f2;
   display:flex;
   justify-content: center;
   align-items: center;
-  padding-left:10px;
+  padding-left:0.625em;
 }
 
 .filtres {
@@ -122,9 +141,10 @@ footer {
   flex-direction: row;
   align-items:center;
   justify-content: flex-start;
-  gap:50px;
-  margin: 0 0 30px 50px;
-  height:50px;
+  gap:3.125em;
+  margin: 0 0 1.875em 3.125em;
+  height:3.125em;
+  width:auto;
 }
 
 .filtres button:hover {
@@ -134,11 +154,11 @@ footer {
 button {
   display:flex;
   align-items: center;
-  width: auto;
-  height:50px;
-  border: 2px solid #D9D9D9;
-  border-radius:25px;
-  padding:0 20px 0 20px;
+  width: 100%;
+  height:3.5em;
+  border: 0.125em solid #D9D9D9;
+  border-radius:2em;
+  padding:0 1.25em 0 1.25em;
   background-color:white ;
 }
 
@@ -147,54 +167,45 @@ button {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  gap:15px;
-  margin:20px 0 30px 50px;
-}
-
-.infos-items {
-  display:flex;
-  align-items: center;
-  width: 0px;
-  height:0px;
-  border: 2px solid #D9D9D9;
-  border-radius:30px;
-  padding: 15px;
+  gap:1em;
+  margin:1.25em 0 1.875em 3.125em;
 }
 
 .aside {
   display:flex;
-  gap:30px;
+  gap:1.875em;
   justify-content: space-between;
-  margin:0 50px 0 50px;
-  height:700px;
+  margin:0 3.125em 0 3.125em;
+  height:43.75em;
+  width:100%
 }
 .populaires {
   display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width:420px;
-  height:650px;
-  gap:28px; 
+  width:100%;
+  height:40.625em;
+  gap:1.75em; 
   background-color: #F2F2F2;
-  border-radius: 20px;
+  border-radius: 1.5em;
 }
 
 .populaires img {
-  width:140px;
-  height:140px;
-  border-radius: 20px 0 0 20px;
+  width:8.75em;
+  height:8.75em;
+  border-radius: 1.5em 0 0 1.5em;
   object-fit:cover;
-  border: solid 5px white;
+  border: solid 0.313em white;
 }
 
 .populaires-items {
   display:flex;
-  width:350px;
-  height:150px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  width:21.875em;
+  height:9.375em;
+  box-shadow: 0 0.25em 0.5em 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  border-radius: 20px;
+  border-radius: 1.5em;
   background-color: white;
 }
 
@@ -202,8 +213,8 @@ button {
   display:flex;
   flex-direction: column;
   justify-content: space-between;
-  gap:5px;
-  margin: 15px 0 10px 10px;
+  gap:0.313em;
+  margin: 0.938em 0 0.625em 0.625em;
 }
 
 .pop-in-texte {
@@ -216,11 +227,11 @@ button {
   width:100%;
   height:10%;
   flex-direction: row;
-  gap:70px;
+  gap:4.375em;
   justify-content: space-around;
   position: relative;
-  top:20px;
-  left:2px;
+  top:1.25em;
+  left:0.125em;
 }
 
 .hebergements {
@@ -228,115 +239,115 @@ button {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width:900px;
-  height:650px;
-  gap: 35px;
+  width:70%;
+  height:40.625em;
+  gap: 2.188em;
   background-color: #F2F2F2; 
-  border-radius: 20px;
-  margin: 0 30px 30px 0;
+  border-radius: 1.5em;
+  margin: 0 1.875em 1.875em 0;
 }
 
  .hebergements img {
-  width:235px;
-  height:125px;
+  width:14.688em;
+  height:7.813em;
   object-fit:cover;
-  border-radius: 20px 20px 0 0;
-  border: solid 5px white;
+  border-radius: 1.5em 1.5em 0 0;
+  border: solid 0.313em white;
   
 }
 
 .hebergements-items {
   display:flex;
   flex-direction: column;
-  width:245px;
-  height:200px;
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.1);
+  width:15.313em;
+  height:12.5em;
+  box-shadow: 0 0.25em 0.25em 0 rgba(0,0,0,0.1);
   transition: 0.3s;
-  border-radius: 20px;
+  border-radius: 1.5em;
   background-color: white;
 }
 
 .hebergements-texte {
   display:flex;
   flex-direction:column;
-  gap:3px;
-  margin: 3px 0 0 15px;
+  gap:0.188em;
+  margin: 0.188em 0 0 0.938em;
 }
 
 .h-texte-haut {
-  width:900px;
+  width:56.25em;
   display:flex;
   justify-content: flex-start;
-  margin: 40px 0 0 40px;
+  margin: 2.5em 0 0 2.5em;
 }
 
 .h-texte-bas {
-  margin: 0 720px 20px 0;
-  padding-bottom:20px;
+  margin: 0 45em 1.25em 0;
+  padding-bottom:1.25em;
 }
 
 .activites {
   display:flex;
-  gap: 60px; 
-  margin: 20px 0 70px 50px;
-  width:1400px;
+  gap: 3.75em; 
+  margin: 1.25em 0 4.375em 3.125em;
+  width:87.5em;
 }
 
 .activites img {
-  width:300px;
-  height:390px;
+  width:18.75em;
+  height:24.375em;
   object-fit: cover;
-  border-radius: 20px 20px 0 0;
-  margin-bottom:10px;
+  border-radius: 1.5em 1.5em 0 0;
+  margin-bottom:0.625em;
  }
 
 .activites-item {
   display:flex;
   flex-direction: column;
-  width:300px;
-  height:450px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  width:18.75em;
+  height:28.125em;
+  box-shadow: 0 0.25em 0.5em 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  border-radius: 20px;
+  border-radius: 1.5em;
   justify-content: center;
 }
 
 .activites-texte {
-  margin:10px 0 20px 20px;
+  margin:0.625em 0 1.25em 1.25em;
 }
 
 .pied {
-  width:1340px;
-  height:200px;
+  width:83.75em;
+  height:12.5em;
   display:flex;
   flex-wrap: wrap;
   flex-direction:row;
   justify-content: space-around;
   background-color: #F2F2F2;
-  margin-top:25px;
-  margin-left:45px;
-  padding-right:45px;
-  padding-top:40px;
+  margin-top:1.563em;
+  margin-left:2.813em;
+  padding-right:2.813em;
+  padding-top:2.5em;
   
 } 
 
 .souspied {
   display:flex;
   flex-direction: column;
-  gap:25px;
+  gap:1.563em;
 }
 
 .fa-solid {
   color:#0065FC;
   position:relative;
-  top:2px;
-  right:4px;
+  top:0.125em;
+  right:0.25em;
 }
 
 .fa-location-dot {
   color:black;
-  width:14px;
-  height:18px;
+  width:0.875em;
+  height:1.125em;
 }
 
 a:link,
@@ -348,9 +359,9 @@ a:active {
 }
 
 .fa-info {
-  border: 2px solid #F2F2F2;
-  border-radius: 20px;
-  padding: 5px 10px 5px 10px;
+  border: 0.125em solid #F2F2F2;
+  border-radius: 1.5em;
+  padding: 0.313em 0.625em 0.313em 0.625em;
 }
 
 .etoiles {
