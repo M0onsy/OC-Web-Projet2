@@ -11,11 +11,12 @@
 <body>
    <header>
       <nav>
-         <a href="index.html"><img class="logo" src="images/Images Booki/logo/Booki.png" alt="Logi Booki" >
+         <a href="index.html">
+            <img class="logo" src="images/Images Booki/logo/Booki.png" alt="Logi Booki" >
          </a>
          <div class="header">
-            <a href="#hebergements">Hébergements</a>
-            <a href="#activites">Activités</a>
+            <a class="heb" href="#hebergements">Hébergements</a>
+            <a class="act" href="#activites">Activités</a>
          </div>
       </nav>
    </header>
@@ -29,10 +30,12 @@
    <section>
       <div class="conteneur-recherche">
          <div class="localisation">
-            <i class="fa-sharp fa-solid fa-location-dot"></i>
+            <label for="geolocalisation"><i class="fa-sharp fa-solid fa-location-dot"></i></label>
          </div>
-         <input type="button" class="site-recherche" value="Marseille, France">
-         <input type="button" class="rechercher" value="Rechercher"></button>
+         <form>
+            <input type="button" class="site-recherche" value="Marseille, France">
+            <input type="button" class="rechercher" value="Rechercher"></button>
+         </form>
       </div>
    </section>
 

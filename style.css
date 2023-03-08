@@ -6,6 +6,7 @@
 body {
   margin:auto;
   max-width: 1400px;
+  max-height:1900px;
 }
 
 h1 {
@@ -48,15 +49,20 @@ nav a {
 }
 
 footer {
-  width: 1200px;
+  width: 80%;
 }
 
-
+.header a:hover {
+  padding:45px 20px 0 20px;
+  border-top: 4px solid #0065FC;
+}
 
 .logo {
-  width:70px;
-  height:20px;
+  width:80%;
+  height: 20px;
   margin: 0 0 30px 22px;
+  position:relative;
+  top:10px;
 }
 
 .texte{
@@ -80,7 +86,7 @@ footer {
   margin: 20px 0 30px 50px;
 }
 .rechercher {
-  width: 160px;
+  width: auto;
   height: 48px;
   border: 1px solid #0065FC;
   color: white;
@@ -99,14 +105,15 @@ footer {
 } 
 
 .localisation {
-  width:50px;
-  height:46px;
+  width:3%;
+  height: 46px;
   border: 1px solid #f2f2f2;
   border-radius: 15px 0 0 15px;
   background-color: #f2f2f2;
   display:flex;
   justify-content: center;
   align-items: center;
+  padding-left:10px;
 }
 
 .filtres {
@@ -118,7 +125,10 @@ footer {
   gap:50px;
   margin: 0 0 30px 50px;
   height:50px;
-  
+}
+
+.filtres button:hover {
+  background-color:#DEEBFF;
 }
 
 button {
