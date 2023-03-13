@@ -117,6 +117,7 @@ a:active {
   justify-content: flex-start;
   align-items: center;
   padding-bottom:35px;
+
 }
 
 .localisation {
@@ -151,15 +152,13 @@ a:active {
   right:8px;
 } 
 
-.filtres {
-  height:auto;
-  width:100%;
+.filtres-bouton {
+  width:auto;
   font-size:17px;
   display:flex;
-  flex-direction: row;
+  justify-content:flex-start;
   align-items:center;
-  justify-content: flex-start;
-  gap:50px;
+  gap:5%;
   padding-bottom:30px;
 }
 
@@ -369,22 +368,40 @@ a:active {
 
 .pied {
   width:auto;
-  height:180px;
+  height:auto;
   display:flex;
-  flex-wrap: wrap;
   flex-direction:row;
   justify-content: flex-start;
   background-color: #F2F2F2;
-  gap:80px;
-  padding-top:30px;
-  padding-left:60px;
+  gap:120px;
+  padding-top:45px;
+  padding-left:70px;
+  padding-bottom:4%;
 } 
 
+.pied section {
+  width:auto;
+}
+
 .souspied {
+  width:15%;
   display:flex;
   flex-direction: column;
-  gap:15px;
-  padding-right:20px;
+  padding-right:80px;
+}
+
+.souspied-titre {
+  width:100%;
+  display:flex;
+  padding-bottom:30px;
+}
+
+.souspied-contenu {
+  width:100%;
+  display:flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap:12px;
 }
 
 .fa-solid {
@@ -392,6 +409,12 @@ a:active {
   position:relative;
   top:0px;
   right:0px;
+}
+
+.filtres .fa-solid {
+  position:relative;
+  top:1px;
+  right:5px;
 }
 
 .fa-location-dot {
@@ -408,10 +431,6 @@ a:active {
 }
 
 @media (max-width: 991.98px) {
-
-  .filtres {
-    gap:20px;
-  }
 
   .heb-and-pop {
     flex-direction:column;
@@ -444,8 +463,118 @@ a:active {
     padding: 0;
   }
 
+  .pied {
+    padding:45px 30px 0px 70px;
+    gap:0px;
+  }
+
 }
 
 @media all and (max-width: 767.98px) {
 
+  .main-container {
+    padding:0;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  .header {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .filtres-titre {
+    width:100%;
+    padding-bottom:15px;
+  }
+
+  .filtres section {
+    width:100%;
+  }
+
+  .filtres {
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap:0;
+  }
+
+  .filtres button {
+    width:80%;
+    padding-top:20px;
+    padding-bottom:20px;
+    }
+
+  .filtres-bouton {
+    display:flex;
+    flex-wrap: wrap;
+    gap:30px;
+  }
+
+  .filtre {
+    width:40%;
+  }
+
+  .heb-and-pop {
+    flex-direction: column-reverse;
+  }
+
+  .heb-and-pop section {
+    
+  }
+
+  .heb-and-pop .hebergements {
+    border-radius: 0;
+    background-color: white;
+  }
+
+  .heb-and-pop .populaires {
+    border-radius:0;
+  }
+
+  .populaires-cartes {
+    flex-direction: column;
+  }
+
+  .populaires {
+    background-color:black;
+  }
+  .populaires a {
+    width:100%;
+  }
+
+  .hebergements-cartes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hebergements a {
+    width:100%;
+  }
+  .hebergements-soustitre {
+    display:none;
+  }
+
+  .activites-titre {
+    padding-left:80px;
+  }
+  .activites-cartes {
+    flex-direction: column;
+    align-items:center;
+  }
+
+  .activites a {
+    width:85%;
+  }
+
+  .pied {
+    flex-direction: column;
+    padding-bottom:4%;
+    gap:40px;
+  }
 }
