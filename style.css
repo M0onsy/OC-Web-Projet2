@@ -52,6 +52,10 @@ p {
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
+.activites .carte {
+  padding:0;
+}
+
 .carte img {
   object-fit: cover;
 }
@@ -129,6 +133,8 @@ a:active {
   display:flex;
   justify-content: center;
   align-items: center;
+  position:relative;
+  top:1px;
 }
 
 .recherche-ville { 
@@ -139,10 +145,12 @@ a:active {
   border: 2px solid #f2f2f2;
   padding-right:15px;
   padding-left: 15px;
+  position:relative;
+  top:1px;
 }
 
 .rechercher {
-  width: 130px;
+  width: auto;
   height: 50px;
   border: 2px solid #0065FC;
   color: white;
@@ -150,11 +158,20 @@ a:active {
   border-radius: 0 14px 14px 0;
   position:relative;
   right:8px;
+  top:1px;
+  font-size:18px;
 } 
+
+.recherche-icone {
+  display:none;
+}
+
+.recherche .fa-magnifying-glass {
+  color: white;
+}
 
 .filtres-bouton {
   width:auto;
-  font-size:17px;
   display:flex;
   justify-content:flex-start;
   align-items:center;
@@ -175,6 +192,13 @@ a:active {
   border-radius:32px;
   padding: 10px 15px 10px 15px;
   background-color:white;
+}
+
+.filtres h1 {
+  font-size:18px;
+}
+.filtres h2 {
+  font-size:17px;
 }
 
 .infos {
@@ -206,6 +230,7 @@ a:active {
   display:flex;
   justify-content: space-between;
   align-items: center;
+  padding-top:25px;
 }
 
 .populaires-cartes .carte {
@@ -258,6 +283,7 @@ a:active {
   width:100%;
   padding-top:50px;
   padding-left:15px;
+  padding-bottom:20px;
 }
 
 .hebergements-cartes {
@@ -327,7 +353,7 @@ a:active {
   width:100%;
   display:flex;
   padding-top:50px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 .activites-cartes {
@@ -432,6 +458,24 @@ a:active {
 
 @media (max-width: 991.98px) {
 
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  nav a {
+    padding-top:49px;
+    padding-left: 30px;
+    padding-right:30px;
+  }
+  
+  nav a:hover {
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
+  }
+
   .heb-and-pop {
     flex-direction:column;
   }
@@ -450,9 +494,14 @@ a:active {
     margin:15px;
   }
 
+  .populaires-titre {
+    padding-top:0;
+  }
+
   .populaires-cartes {
     display:flex;
     justify-content: space-between;
+    height:auto;
   }
 
   .activites-cartes img {
@@ -476,19 +525,83 @@ a:active {
     padding:0;
   }
 
-  nav {
-    flex-direction: column;
+  .logo {
+    padding-bottom:80px;
   }
 
   .header {
     display:flex;
+    width:100%;
+
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    display:flex;
+    justify-content: center;
+    width:100%;
+    padding-bottom: 25px;
+    border-bottom: 3px solid #F2F2F2;
+  }
+
+  nav a:hover {
+    border-bottom: 3px solid #0065FC;
+    border-top:0px;
+    color: #0065FC;
+  }
+
+  .texte {
+    width:80%;
+    display:flex;
+    padding-left:30px;
+    padding-top:30px;
+  }
+
+  .recherche {
+    display: flex;
     justify-content: center;
     align-items: center;
   }
 
+  .localisation {
+    position:relative;
+    left:22px;
+  }
+  .recherche form {
+    display:flex;
+    justify-content: center;
+  }
+
+  .recherche-ville {
+    width:60%;
+  }
+
+  .rechercher {
+    width:18%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .recherche-mot {
+    display:none;
+  }
+
+  .recherche-icone {
+    display:initial;
+  }
+
+  .filtres h2 {
+    font-size:22px;
+  }
+
   .filtres-titre {
     width:100%;
-    padding-bottom:15px;
+    padding-bottom:0px;
+    padding-left:8%;
   }
 
   .filtres section {
@@ -504,8 +617,12 @@ a:active {
     gap:0;
   }
 
+  .filtres h2 {
+    font-size:11px;
+  }
+
   .filtres button {
-    width:80%;
+    width:100%;
     padding-top:20px;
     padding-bottom:20px;
     }
@@ -513,11 +630,17 @@ a:active {
   .filtres-bouton {
     display:flex;
     flex-wrap: wrap;
-    gap:30px;
+    gap:15px;
+    justify-content:center;
   }
 
   .filtre {
     width:40%;
+  }
+
+  .infos {
+    padding-left:5%;
+    padding-bottom:0;
   }
 
   .heb-and-pop {
@@ -525,7 +648,7 @@ a:active {
   }
 
   .heb-and-pop section {
-    
+    padding:20px;
   }
 
   .heb-and-pop .hebergements {
@@ -537,15 +660,22 @@ a:active {
     border-radius:0;
   }
 
-  .populaires-cartes {
-    flex-direction: column;
+  .populaires-titre {
+    padding-bottom:20px;
   }
 
-  .populaires {
-    background-color:black;
+  .populaires-cartes {
+    flex-direction: column;
+    align-items: center;
   }
+
+  .populaires-cartes .carte {
+    margin-top:0;
+  }
+
   .populaires a {
     width:100%;
+    margin:5px;
   }
 
   .hebergements-cartes {
@@ -553,28 +683,54 @@ a:active {
     align-items: center;
   }
 
+  .hebergements-cartes .carte {
+    margin-top:10px;
+  }
+
   .hebergements a {
     width:100%;
+    margin:0;
   }
+
+  .hebergements-titre {
+    padding-top:0;
+    padding-left:0;
+  }
+
   .hebergements-soustitre {
     display:none;
   }
 
+
   .activites-titre {
-    padding-left:80px;
+    padding-left:40px;
+    padding-bottom: 5px;
+    width:50%;
   }
   .activites-cartes {
     flex-direction: column;
     align-items:center;
+    gap:20px;
+  }
+
+  .activites section {
+    width:100%;
+    display:flex;
+    padding:20px;
+  }
+
+  .activites-cartes img {
+    height:140px;
   }
 
   .activites a {
-    width:85%;
+    width:100%;
+    margin:0px;
   }
 
   .pied {
     flex-direction: column;
-    padding-bottom:4%;
+    padding: 15% 0 8% 12%;
     gap:40px;
   }
 }
